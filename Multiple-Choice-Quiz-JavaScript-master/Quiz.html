@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <nav>
+        <form action="index.html">
+            <input type="submit" value="Accueil" />
+        </form>
+        <form action="LeCaire.html">
+            <input type="submit" value="Le Caire" />
+        </form>
+    </nav>
+    
+    <nav id="container">
+        <nav id="start">Start Quiz!</nav>
+        <div id="quiz" style="display: none">
+            <nav id="question"></nav>
+            <nav id="qImg"></nav>
+            <nav id="choices">
+                <nav class="choice" id="A" onclick="checkAnswer('Le Caire')"></nav>
+                <nav class="choice" id="B" onclick="checkAnswer('Nord-Est de l Afrique')"></nav>
+                <nav class="choice" id="C" onclick="checkAnswer('Dialecte egyptien')"></nav>
+            </nav>
+            <nav id="timer">
+                <nav id="counter"></nav>
+                <nav id="btimeGauge"></nav>
+                <nav id="timeGauge"></nav>
+            </nav>
+            <nav id="progress"></nav>
+        </nav>
+        <nav id="scoreContainer" style="display: none"></nav>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Quiz.html">
+    <title>L'Egypte</title>
+</head>
+<body>
+    <header>
+        <h1>Les meilleurs endroits à visiter en Egypte</h1>
+    </header>
+
+    <div id="centre">
+        <aside>
+            <nav>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#Caire">Le Caire</a></li>
+                    <li><a href="#Luxor">Luxor</a></li>
+                    <li><a href="#Quiz">Quiz</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="accueil">
+                <img src="pyramide.jpg">
+                <h2>Let's go</h2>
+                <p>Je vous invite à découvrir un pays d'afrique du nord, avec des destinations à couper le souffle.
+
+                    L'Égypte est un pont entre l'Afrique du Nord-Est et le Moyen-Orient et son histoire remonte à l'époque des premières civilisations.
+                    
+                    Des monuments millénaires bordent les berges de la fertile vallée du Nil, notamment le sphinx et les pyramides colossales de Gizeh.
+                    
+                    La ville de Louxor abrite le temple de Karnak, ainsi que les tombeaux de la vallée des rois.
+                    
+                    Le Caire, la capitale, regorge de sites arabo-islamique, notamment la Citadelle de Saladin et les somptueux musées égyptiens.
+                    <strong>Profitez de votre séjour !</strong></p>
+                    <span></span>
+            </section>
+            <section id="Caire">
+                <h2>Le Caire</h2>
+                <div class="service">
+                    <img src="khankhalili.png">
+                    <h3>Le souk touristique</h3>
+                </div>
+                <div class="service">
+                    <img src="baronpalace.png">
+                    <h3>Le palais du baron Empain</h3>
+                </div>
+                <div class="service">
+                    <img src="downtown.png">
+                    <h3>Centre ville</h3>   
+                </div>
+                <div class="service">
+                    <img src="WPJT0166.JPG">
+                    <h3>la joie</h3>   
+                </div>
+                <span></span>
+            </section>
+
+            <section id="Luxor">
+                <h2>Luxor</h2>
+                <img src="IMG_5306.JPG">
+                <img src="IMG_5300.JPG">
+                <img src="IMG_5315.JPG">
+                <img src="IMG_5305.JPG">
+                <img src="IMG_5314.JPG">
+                
+            </section>
+
+            <section id="Quiz">
+                <h2>Quiz</h2>
+                <nav id="container">
+                    <nav id="start">Start Quiz!</nav>
+                    <div id="quiz" style="display: none">
+                        <nav id="question"></nav>
+                        <nav id="qImg"></nav>
+                        <nav id="choices">
+                            <nav class="choice" id="A" onclick="checkAnswer('Le Caire')"></nav>
+                            <nav class="choice" id="B" onclick="checkAnswer('Nord-Est de l Afrique')"></nav>
+                            <nav class="choice" id="C" onclick="checkAnswer('Dialect egyptien')"></nav>
+                        </nav>
+                        <nav id="timer">
+                            <nav id="counter"></nav>
+                            <nav id="btimeGauge"></nav>
+                            <nav id="timeGauge"></nav>
+                        </nav>
+                        <nav id="progress"></nav>
+                    </nav>
+                    <nav id="scoreContainer" style="display: none"></nav>
+                </div>
+                <script src="quiz.js"></script>
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>Projet 2021 - &copy; Tourisme</p>
+    </footer>
+</body>
+</html>
